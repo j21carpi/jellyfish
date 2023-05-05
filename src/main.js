@@ -30,7 +30,7 @@ function init() {
             scene.environment = texture;
 
             const loader = new GLTFLoader().setPath("/assets/models/");
-            loader.load("Jellyfish_bell_bones6.glb", function (gltf) {
+            loader.load("Jellyfish_bell_bones7.glb", function (gltf) {
                 const cube = gltf.scene;
 
                 scene.add(cube);
@@ -89,7 +89,7 @@ function onWindowResize() {
 
 function move(x, boneIndex) {
     const amplitude = -.001;
-    const period = 3.5;
+    const period = 4;
     const phaseOffset = Math.PI / bones[0].length * 2;
     const phase = boneIndex * phaseOffset;
 
